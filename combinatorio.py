@@ -19,7 +19,7 @@ def raggruppamenti():
   for i in range(k):
     n=int(input("inserisci n: "))
     tot=tot*n
-  print("il risultato è ",tot)
+  print("il risultato del raggruppamento è ",tot)
 
 
 def disposizioni():
@@ -31,13 +31,13 @@ def disposizioni():
       break
   for i in range(k):
     tot=tot*(n-i)
-  print("il risultato dell disposizione è ",tot)
+  print("il risultato della disposizione è ",tot)
 
 
 def disposizioni_r():
   n=input_n()
   k=input_k()
-  print("il risultato dell disposizione è ",n**k)
+  print("il risultato della disposizione con ripetizioni è ",n**k)
 
 
 def permutazioni():
@@ -47,14 +47,12 @@ def permutazioni():
   print("il risultato dell permutazione è ",tot)
 
 def permutazione_r():
-  tot = 0
+  h=1
   n=input_n()
-  ripetuti = []
-  n_ripetuti = int(input("quanti sono gli elementi ripetuti?"))
-  
-
-  print("il risultato dell permutazione è ",tot)
-
+  k=int(input("Quanti gruppi ci sono: "))
+  for i in range (k):
+    h=h*(math.factorial(int(input("inserisci la grandezza del gruppo:"))))
+  print("il risultato è: ", math.factorial(n)/h)
 
 def combinazione():
   while True:
@@ -65,13 +63,20 @@ def combinazione():
     else:
       print("k deve essere minore di n")
   tot=math.factorial(n)/(math.factorial(k)*math.factorial((n-k)))
-  print("il risultato dell permutazione è ",tot)
+  print("il risultato della combinazione è ",tot)
 
 def combinazioni_r():
   n=input_n()
   k=input_k()
   risultato = math.factorial((n+k-1))/(math.factorial(k)*math.factorial(n-1)) #https://www.youmath.it/lezioni/probabilita/calcolo-combinatorio/1217-combinazione-con-ripetizione.html
-  print("il risultato dell permutazione è ",risultato)
+  print("il risultato della combinazione con ripetizoni è ",risultato)
 
 
-
+'''
+h=1
+n=input_n
+k=int(input("Quanti gruppi ci sono: "))
+for i in range (k):
+  h=h*math.factorial(int(input("inserisci la grandezza del gruppo")))
+print("il risultato è: ", math.factorial/h)
+'''

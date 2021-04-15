@@ -24,7 +24,7 @@ while mol==1:
       if dec=="no":
         disposizioni_r()
         mol=0
-  elif dec=="no":   
+  if dec=="no":   
       while True:
         dec = input("ci sono più elementi di certi insiemi che puoi ragruppare in successione ; devi associare degli elementi di un gruppo d un altro? si/no: ")
         if dec=="si" or dec=="no":
