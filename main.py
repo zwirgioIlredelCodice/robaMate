@@ -5,23 +5,23 @@ while True:
     break
 if dec=="si":
   while True:
-    dec = input("sono presenti ripetizioni?  si/no: ")
+    dec = input("sono presenti ripetizioni di stessi elementi?  si/no: ")
     if dec=="si" or dec=="no":
       break
   if dec == "no": 
     disposizioni()
   if dec=="si": 
     while True:
-      dec = input("c'è almeno un elemento uguale ad un altro?  si/no: ")
+      dec = input("si possono ripetere tutti gli elementi?  si/no: ")
       if dec=="si" or dec=="no":
         break
     if dec=="si": 
-      permutazione_r()
-    if dec=="no":
       disposizioni_r()
+    if dec=="no":
+      permutazione_r()
 elif dec=="no":   
     while True:
-      dec = input("ci sono più elementi di certi insiemi che puoi ragruppare in successione ; devi associare degli elementi di un gruppo d un altro? si/no: ")
+      dec = input("ci sono più elementi di certi insiemi che devi ragruppare in successione si/no: ")
       if dec=="si" or dec=="no":
         break
     if dec=="si":
@@ -35,7 +35,3 @@ elif dec=="no":
         combinazioni_r()
       if dec=="no":
         combinazione()
-    
-
-    
-

@@ -39,9 +39,9 @@ def disposizioni():
 
 
 def disposizioni_r():
-    print("Inserire il numero totale di elementi considerati")
+    print("Inserire quanti elementi ci sono")
     n = input_n()
-    print("Inserire quanti elementi del gruppo precedente vuoi prendere")
+    print("Inserire il numero di volte in cui si ripete ")
     k = input_k()
     print("il risultato della disposizione con ripetizioni è ", n**k)
 
@@ -81,9 +81,10 @@ def combinazione():
 
 
 def combinazioni_r():
-    print("Le cose da distribuire")
-    n = input_n()
     print("In quanti posti metterle")
+    n = input_n()
+    print("Le cose da distribuire")
     k = input_k()
-    risultato = math.factorial((n + k - 1)) / (math.factorial(k) * math.factorial(n - 1))  #https://www.youmath.it/lezioni/probabilita/calcolo-combinatorio/1217-combinazione-con-ripetizione.html
+    risultato = math.factorial(
+        (n + k - 1)) / (math.factorial(k) * math.factorial(n - 1))
     print("il risultato della combinazione con ripetizoni è ", risultato)
