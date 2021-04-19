@@ -68,7 +68,7 @@ def permutazione_r():
 
 def combinazione():
     while True:
-        print("Inserire il bumero maggiore")
+        print("Inserire il numero maggiore")
         n = input_n()
         print("Inserire il numero minore")
         k = input_k()
